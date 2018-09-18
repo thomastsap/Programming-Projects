@@ -49,3 +49,23 @@ echo -en "\x1b[H";places the cursor at [line, column] = [1, 1]
 31;4 -> ;31;4, so color red, underline
 
 If color code is prefixed by 38;5 it is interpreted as one of 256 colors.
+
+---------- read -----------
+
+read returns every 100 miliseconds but its return value is -1 because it could not read a value on 
+
+---------- ioctl -----------
+It's a system call that with the use of cmd TIOCGWINSZ we get in a struct the size of the window.
+
+---------- printing strings ---------
+char buf[32];
+
+buf[0] = 'T' 
+buf[1] = 'h'
+buf[2] = 'o'
+buf[3] = 'm'
+buf[4] = 'a'
+buf[5] = 's'
+
+printf("%s", &buf[0]) or 
+printf("%s", &buf)
