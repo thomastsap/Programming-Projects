@@ -1,4 +1,4 @@
----------- Canonical Mode ----------
+----------- Canonical Mode ----------
 Keyboard input is only sent to the program when the user presses Enter
 
 ---------- Keypresses translate to bytes ----------
